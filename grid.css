@@ -1,0 +1,73 @@
+.container{
+    width: 100%;
+    height: 500px;
+    border: 5px solid black;
+    background: black;
+
+    display: grid;
+
+    /* this under i comented out because it just messes up the whole look, i dont like it, i works fine without it, it fits in the container, try it yourself, */
+ 
+     /* btw, i tried almost everything and this is the only option that works....probably i did fordet something, but not shure what */
+  
+    
+    /* grid-template-columns:30vh repeat(5, 1fr) 100px;
+    grid-template-rows: 30px repeat(7, 1fr) 30px;   */
+
+    /* grid-template-columns: ;
+    grid-template-rows:  ; */
+
+    gap: 10px;
+    
+   
+}
+.container > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%;
+    height: 100%; */
+
+}
+.box1{
+    grid-area: 1/1/6/2;
+    background: red;
+}
+.box2{
+    grid-area: 6/1/7/2;
+    background-color: white;
+
+}
+.box3{
+    grid-area: 1/2/3/3;
+    background: yellow;
+}
+.box4{
+   grid-area: 3/2/6/3;
+   background: white;
+}
+.box5{
+    grid-area: 6/2/7/3;
+    background: rgb(8, 8, 180);
+}
+.box6{
+    grid-area: 1/3/4/4;
+    background: white;
+
+}
+.box7{
+    grid-area: 4/3/4/4;
+    background: rgb(8, 8, 180)
+}
+.box8{
+    grid-area:5/3/7/5 ;
+    background: yellow
+}
+.box9{
+    grid-area:1/4/2/5 ;
+    background: red;
+}
+.box10{
+    grid-area: 2/4/5/5;
+    background: white;
+}
